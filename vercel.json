@@ -1,7 +1,6 @@
 {
     "version": 2,
     "framework": null,
-    "installCommand": "composer install --no-dev && npm install && npm run build",
     "builds": [
         {
             "src": "public/index.php",
