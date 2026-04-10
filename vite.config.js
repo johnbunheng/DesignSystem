@@ -15,4 +15,7 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
+    build: {
+    outDir: 'dist', // កំណត់ឱ្យវាចេញក្នុង folder dist
+  },
 });
