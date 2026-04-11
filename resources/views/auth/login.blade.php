@@ -8,11 +8,11 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700&display=swap" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen bg-gradient-to-br from-sky-500 via-indigo-600 to-fuchsia-600 font-sans text-slate-900">
+<body class="min-h-screen bg-linear-to-br from-sky-500 via-indigo-600 to-fuchsia-600 font-sans text-slate-900">
     <div class="min-h-screen flex items-center justify-center px-4 py-12">
         <div class="max-w-3xl w-full bg-white rounded-[1.75rem] shadow-2xl shadow-slate-900/20 overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr]">
-                <div class="hidden lg:flex items-center justify-center bg-gradient-to-br from-slate-950 to-slate-800 p-10">
+                <div class="hidden lg:flex items-center justify-center bg-linear-to-br from-slate-950 to-slate-800 p-10">
                     <div class="text-center">
                         <div class="mx-auto mb-8 h-24 w-24 rounded-full bg-white/10 shadow-inner shadow-slate-900/20 flex items-center justify-center">
                             <svg class="h-14 w-14 text-sky-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
