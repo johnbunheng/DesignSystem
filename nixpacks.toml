@@ -1,13 +1,13 @@
 [phases.setup]
-nixPkgs = ["php82", "nodejs_22", "composer"]
+nixPkgs = ["php82", "nodejs_22", "composer"] # បន្ថែម nodejs_22 ក្នុងនេះដើម្បីឱ្យមាន npm
 
 [phases.build]
 cmds = [
-    "composer install --optimize-autoloader --no-dev",
-    "npm install",
-    "npm run build",
-    "php artisan config:clear",
-    "php artisan migrate --force"
+    "composer install --no-dev --optimize-autoloader",
+    "npm install", # ឥឡូវវានឹងលែង Error command not found ហើយ
+    "npm run build", # បង្កើតឯកសារ manifest.json ដែលកំពុងខ្វះ
+    "php artisan config:cache",
+    "php artisan migrate --force" # បង្កើត Table ចូល Database
 ]
 
 [phases.start]
