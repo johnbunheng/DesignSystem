@@ -1,8 +1,14 @@
+[phases.setup]
+nixPkgs = ["php82", "nodejs_22", "composer"]
+
 [phases.build]
 cmds = [
-    "composer install",
+    "composer install --optimize-autoloader --no-dev",
     "npm install",
     "npm run build",
-    "php artisan migrate --force",  # បន្ថែមបន្ទាត់នេះដើម្បីបង្កើត Table
-    "php artisan optimize"
+    "php artisan config:clear",
+    "php artisan migrate --force"
 ]
+
+[phases.start]
+cmd = "php artisan serve --host 0.0.0.0 --port $PORT"
